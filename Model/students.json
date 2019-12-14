@@ -1,0 +1,22 @@
+[
+    {"id": "0", "name":"Jan Marek", "room":"E112"},
+    {"id": "1", "name":"Anna Masná", "room":"L034"},
+    {"id": "2", "name":"Peter Čistý", "room":"E112"},
+    {"id": "3", "name":"Jan Marek", "room":"D105"},
+    {"id": "4", "name":"Laura Biela", "room":"E112"},
+    {"id": "5", "name":"Andrej Nový", "room":"D105"},
+    {"id": "6", "name":"Jan Marek", "room":"D105"},
+    {"id": "7", "name":"Jožko Mrkva", "room":"E112"},
+    {"id": "8", "name":"Peter Bielik", "room":"D105"},
+    {"id": "9", "name":"Andrej Starý", "room":"O105"},
+    {"id": "10", "name":"Jan Lobotka", "room":"D0207"},
+    {"id": "11", "name":"Jožko Anakonda", "room":"E112"},
+    {"id": "12", "name":"Dávid Sviečka", "room":"D105"},
+    {"id": "13", "name":"Darina Cajkova", "room":"L034"},
+    {"id": "14", "name":"Vendelina Modrá", "room":"L023"},
+    {"id": "15", "name":"Jožko Anakonda", "room":"menza"},
+    {"id": "16", "name":"Dávid Sviečka", "room":"menza"},
+    {"id": "17", "name":"Darina Cajkova", "room":"menza"},
+    {"id": "18", "name":"Vendelina Modrá", "room":"menza"},
+    {"id": "19", "name":"Katka Šedá", "room":"E016"}
+]
