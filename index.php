@@ -20,7 +20,7 @@
     
     <link rel="stylesheet" type="text/css" href="/Sources/Datatables/datatables.css">
 	<link href="View\reset.css?v=1" rel="stylesheet" type="text/css"> <!-- vyresetuje veskere prednastavene styly a vse budeme delat sami -->
-	<link href="View\bootstrap-4.2.1/dist/css/bootstrap.min.css?v=3" rel="stylesheet" type="text/css"> <!-- bootstrap, pomuze nam s UI -->
+	<link href="Sources\bootstrap-4.2.1/dist/css/bootstrap.min.css?v=3" rel="stylesheet" type="text/css"> <!-- bootstrap, pomuze nam s UI -->
 	<link rel="stylesheet" href="/View/layout.css?v=3">
 	<link href="View\css.css?v=6" rel="stylesheet" type="text/css">
 	
