@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* dela zmeny v cele strance */
+body{										
+	font-family: Segoe UI," sans-serif"; /*font pisma */
+	font-size: 0.9em; /*velikost pisma */
+	background-color: #FFFFFF;
+}
+
+/* nadpis tridy h1 */
+h1{
+	font-size: 2.8em;
+	color: white;
+	text-align: left;
+	margin-left: 55px;
+}
+
+/* menu - podlazi*/
+.pruh-menu {
+	list-style-type: none;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+.menu-button {
+	display: inline-block;
+	background-color: white;
+	color: #373E40;
+	text-align: center;
+	padding: 5px 5px;
+	margin: 5px;
+	text-decoration: none;
+	border: 1.3px solid #2CB9F1;
+	text-transform: uppercase;
+}
+.menu-buttons {
+    text-align: center;
+}
+
+
+
+
+/* zmeny pisma menu po najeti mysi */
+.menu-button:hover {
+    background-color: #2CB9F1;
+    color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+/* upravy oken loginu */
+form{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#email, #heslo{
+	margin-bottom: 8px;
+}
+
+.popis_form{
+	color: white;
+	margin-right: 3px;
+}
+
+
+#hlavicka{
+	background-color: #17255A;
+	margin-bottom: 20px;
+	padding: 15px; 
+}
+
+
+
+/*toggle darkmode */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+}
+
+/*pozadi, v cem kulicka je */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/*bila kulicka, co se prepina */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/*barva po prepnuti */
+ input:checked + .slider {
+  background-color: grey;
+}
+
+/*prepnuti po zmacknuti */
+ input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(9px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+#button {
+	background-color: #2CB9F1; 
+  	border: none;
+  	color: white;
+  	padding: 5px 14px;
+  	cursor: pointer;
+  	border-radius: 10px;
+	margin-top: 10px;
+
+}
+
+#button:hover  {
+	background-color: #4669BD; 
+}
+
+
+footer{
+	background-color: #17255A;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-family: Segoe UI," sans-serif"; /*font pisma */
+	font-size: 0.9em; /*velikost pisma */
+}
+
+
+.menu-stats{
+	background-color: white; 
+}
+
+.menu-stats p{    
+    color: #17255A; 
+	font-weight: bold;	
+}
+
+  
+
+
+
+
+
+
+
+
