@@ -22,7 +22,7 @@
 	<link href="View\reset.css?v=1" rel="stylesheet" type="text/css"> <!-- vyresetuje veskere prednastavene styly a vse budeme delat sami -->
 	<link href="Sources\bootstrap-4.2.1/dist/css/bootstrap.min.css?v=3" rel="stylesheet" type="text/css"> <!-- bootstrap, pomuze nam s UI -->
 	<link rel="stylesheet" href="/View/layout.css?v=3">
-	<link href="View\css.css?v=6" rel="stylesheet" type="text/css">
+	<link href="View\css.css?v=7" rel="stylesheet" type="text/css">
 	
 	
     <link href="Sources/fontawesome-free/css/all.css" rel="stylesheet"> <!--load all styles -->
@@ -163,6 +163,7 @@
     </div>
 
     <div class = "detail-view">
+		<h6>Lokalizovaný uživatel: </h6>
         <div id = "Name">
             <h2></h2>
         </div> 

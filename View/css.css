@@ -179,6 +179,23 @@ footer{
 
   
 
+.detail-view{
+	background-color: #17255A;
+	height: 110px;
+	width: 120px;
+	padding: 5px;
+}
+
+.detail-view h6{
+	color: white;
+	font-size: 1em;
+	text-align: center;
+}
+
+#Name, #Room{
+	color: white;
+	text-align: center;
+}
 
 
 
