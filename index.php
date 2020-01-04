@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 	
-	<html lang="cs" xml:lang="cs" xmlns="http://www.w3.org/1999/xhtml">
-	 <head>
-	   <title>WiFi lokátor FIT VUT</title>
-		<meta charset="utf-8">
-		<!--<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"> -->
-		<meta name="description" content="WiFi lokátor FIT VUT">  
-		<meta name="keywords" lang="cs" content="wifi, locator, lokátor, pozice, obsazenost, fit, vut, vut fit, informatika"> <!-- co nejvice klicovych slov, podh se to pak lepe vyhledava -->  
-		<meta name="author" content="Kateřina Kunorzová, David Špávor"> 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<html lang="cs" xml:lang="cs" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>WiFi lokátor FIT VUT</title>
+	<meta charset="utf-8">
+	<!--<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"> -->
+	<meta name="description" content="WiFi lokátor FIT VUT">  
+	<meta name="keywords" lang="cs" content="wifi, locator, lokátor, pozice, obsazenost, fit, vut, vut fit, informatika"> <!-- co nejvice klicovych slov, podh se to pak lepe vyhledava -->  
+	<meta name="author" content="Kateřina Kunorzová, David Špávor"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <script src="/Sources/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="/Controller/Statistics.js"></script>
-    <script type="text/javascript" src="/Controller/DataTableOperations.js"></script>
-    <script type="text/javascript" src="/Controller/LoadStages.js"></script>
-    <script type="text/javascript" src="/Controller/SendMessage.js"></script>
-    <script type="text/javascript" charset="utf8" src="/Sources/Datatables/datatables.js"></script>
+	<script src="/Sources/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="/Controller/Statistics.js"></script>
+	<script type="text/javascript" src="/Controller/DataTableOperations.js"></script>
+	<script type="text/javascript" src="/Controller/LoadStages.js"></script>
+	<script type="text/javascript" src="/Controller/SendMessage.js"></script>
+	<script type="text/javascript" charset="utf8" src="/Sources/Datatables/datatables.js"></script>
 
-    
-    <link rel="stylesheet" type="text/css" href="/Sources/Datatables/datatables.css">
+
+	<link rel="stylesheet" type="text/css" href="/Sources/Datatables/datatables.css">
 	<link href="View\reset.css?v=1" rel="stylesheet" type="text/css"> <!-- vyresetuje veskere prednastavene styly a vse budeme delat sami -->
 	<link href="Sources\bootstrap-4.2.1/dist/css/bootstrap.min.css?v=3" rel="stylesheet" type="text/css"> <!-- bootstrap, pomuze nam s UI -->
 	<link rel="stylesheet" href="/View/layout.css?v=3">
 	<link href="View\css.css?v=7" rel="stylesheet" type="text/css">
-	
-	
-    <link href="Sources/fontawesome-free/css/all.css" rel="stylesheet"> <!--load all styles -->
-  
-    
+
+
+<link href="Sources/fontawesome-free/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+
 </head>
 
 <body>
@@ -173,7 +173,7 @@
     </div>
 
     <!-- Footer Section -->
-    <footer>Copyright © 2020 Kateřina Kunorzová, David Špávor</footer>
+    <footer>Copyright © 2020 Kateřina Kunorzová, David Špavor</footer>
 
 
 
