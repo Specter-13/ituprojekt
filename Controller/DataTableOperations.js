@@ -21,9 +21,9 @@ $(document).ready(function() {
           "data" : "name"
       },{
         "width" : "5px",
-        "defaultContent": '<button class="Message" style="background-color: Transparent; border:none; "> <i class="fa fa-comment-dots" style="color:green;" ></i></button>'
+        "defaultContent": '<button class="Message" style="background-color: Transparent; border:none; "> <i class="fa fa-comment-dots" style="color:gray;" ></i></button>'
       },{
-        "defaultContent": '<button class="Locate">Locate</button>'
+        "defaultContent": '<button class="Locate">Lokalizovat</button>'
     }
       
     ]

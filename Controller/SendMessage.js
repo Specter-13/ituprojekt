@@ -1,4 +1,4 @@
 function SendMessage(){
 
-    alert("Message Send!");
+    alert("Zpráva odeslána!");
 }

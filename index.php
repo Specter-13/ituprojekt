@@ -15,14 +15,15 @@
     <script type="text/javascript" src="/Controller/DataTableOperations.js"></script>
     <script type="text/javascript" src="/Controller/LoadStages.js"></script>
     <script type="text/javascript" src="/Controller/SendMessage.js"></script>
+	<script type="text/javascript" src="/Controller/login.js"></script>
     <script type="text/javascript" charset="utf8" src="/Sources/Datatables/datatables.js"></script>
 
     
     <link rel="stylesheet" type="text/css" href="/Sources/Datatables/datatables.css">
 	<link href="View\reset.css?v=1" rel="stylesheet" type="text/css"> <!-- vyresetuje veskere prednastavene styly a vse budeme delat sami -->
 	<link href="Sources\bootstrap-4.2.1/dist/css/bootstrap.min.css?v=3" rel="stylesheet" type="text/css"> <!-- bootstrap, pomuze nam s UI -->
-	<link rel="stylesheet" href="/View/layout.css?v=3">
-	<link href="View\css.css?v=7" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/View/layout.css?v=5">
+	<link href="View\css.css?v=8" rel="stylesheet" type="text/css">
 	
 	
     <link href="Sources/fontawesome-free/css/all.css" rel="stylesheet"> <!--load all styles -->
@@ -35,6 +36,9 @@
 
 <script>loadStudents();</script>
 <script>GetStatistics();</script>
+<script>logIn();</script>
+
+
 
 
  <!-- Header Section -->
@@ -77,13 +81,12 @@
 	
 			<div class="col-md-6" align="right">
 				<div id="login"> 
-					<form action="index.php" method="post" id="form_login">
+					<form action="index.php" name="form_login" method="post" id="form_login">
 						<label for="login" class="popis_form" >Login</label>
-						<input type="login" name="login" id="login" value="xlogin00" value="<?php if(isset ($_REQUEST["email"])){print ($_REQUEST["email"]);}; ?>"><br>
+						<input class="login" name="login" value="xlogin00"><br>
 						<label for="password" id="popis_form" class="popis_form">Heslo</label>
-						<input type="password" name="heslo" id="heslo" value="heslo"><br>
-						<input type="hidden" name="vyber" value="2">
-						<input type="submit" name="odeslat" value="Přihlásit" id="button">
+						<input type="password" class="heslo" name="heslo" value="heslo"><br>
+						<button type="button" onclick="logIn()">Přihlásit se</button>
 					</form>	
 				</div>
 			</div>
@@ -95,7 +98,7 @@
 </div>	      
 	
 
-<div class="container"> 
+
 	<div class="row"> 
 		<div class="col-md-11" align="right"> 
 			<!-- Menu Navigation Bar -->
@@ -117,7 +120,7 @@
 		</div>
 	</div>
 
-	</div>
+
 
    
       
@@ -157,9 +160,9 @@
     </div>
 
     <div class = "message-Box-container" id="messageBox">
-        Send message to:<br>
-        <input class ="message-Box-text" type="text" value="Some text">
-        <input class= "send-button" type="button" onclick="SendMessage()" value = "Send">
+        Napsat zprávu:<br>
+        <input class ="message-Box-text" type="text" value="Vaše zpráva">
+        <input class= "send-button" type="button" onclick="SendMessage()" value = "Odeslat">
     </div>
 
     <div class = "detail-view">

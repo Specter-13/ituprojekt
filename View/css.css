@@ -142,7 +142,7 @@ form{
 
 
 
-#button {
+button {
 	background-color: #2CB9F1; 
   	border: none;
   	color: white;
@@ -153,8 +153,23 @@ form{
 
 }
 
-#button:hover  {
+button:hover  {
 	background-color: #4669BD; 
+}
+
+
+.Locate{
+	background-color: gainsboro; 
+  	border: none;
+  	color: black;
+	padding: 3px 3px;
+  	cursor: pointer;
+  	border-radius: 10px;
+	margin: -6px;
+}
+
+.Locate:hover  {
+	background-color: #2CB9F1; 
 }
 
 
@@ -197,6 +212,24 @@ footer{
 	text-align: center;
 }
 
+
+.message-Box-container{
+    display: none;
+    position: relative;
+    width: 180px;
+    height: 270px;
+    background-color: #17255A;
+	text-align: center;
+	color: white;
+	padding: 5px;
+}
+
+.message-Box-text{
+    width: 150px;
+    height: 180px;
+	text-align: center;
+	margin: 10px;
+}
 
 
 
