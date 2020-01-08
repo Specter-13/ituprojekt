@@ -4,31 +4,6 @@ function loadStudents() {
 
 $(document).ready(function() {
   
-  $('#table_id').DataTable({
-      "processing" : false,
-      "paging" : false,
-      "info" : false,
-      "ordering" : false,
-      "ajax" : {
-          "url" : "/Model/students.json",
-          dataSrc : ''
-      },
-      "columns" : [ {
-        "width" : "5px",
-        "defaultContent": '<i class="fas fa-circle fa-xs" style="color:green" ></i>' 
-      },{
-          
-          "data" : "name"
-      },{
-        "width" : "5px",
-        "defaultContent": '<button class="Message" style="background-color: Transparent; border:none; "> <i class="fa fa-comment-dots" style="color:gray;" ></i></button>'
-      },{
-        "defaultContent": '<button class="Locate">Lokalizovat</button>'
-    }
-      
-    ]
-  });
-  
 
   $('#table_id').on( 'click', 'button.Message', function () {
     var x = document.getElementById("messageBox");

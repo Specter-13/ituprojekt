@@ -14,9 +14,7 @@
     {"id": "12", "name":"Dávid Sviečka", "room":"D105", "login":"xsviec00", "heslo":"david"},
     {"id": "13", "name":"Darina Cajkova", "room":"L034", "login":"xcajko00", "heslo":"darina"},
     {"id": "14", "name":"Vendelina Modrá", "room":"L023", "login":"xmodra00", "heslo":"vendelina"},
-    {"id": "15", "name":"Jožko Anakonda", "room":"menza", "login":"xanako00", "heslo":"jozko"},
-    {"id": "16", "name":"Dávid Sviečka", "room":"menza", "login":"xsviec00", "heslo":"david"},
-    {"id": "17", "name":"Darina Cajkova", "room":"menza", "login":"xcajko00", "heslo":"darina"},
-    {"id": "18", "name":"Vendelina Modrá", "room":"menza", "login":"xmodra00", "heslo":"vendelina"},
-    {"id": "19", "name":"Katka Šedá", "room":"E016", "login":"xseda00", "heslo":"katka"}
+    {"id": "15", "name":"Katka Šedá", "room":"E016", "login":"xseda00", "heslo":"katka"},
+	{"id": "16", "name":"Franta Novák", "room":"E016", "login":"xlogin00", "heslo":"heslo"}
+	
 ]

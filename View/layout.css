@@ -62,18 +62,23 @@ body {
     float: right; 
 } 
 .stages {
-    float: center ;
-    padding-left: 20px;
+	text-align: center;
+    float: center;
+    padding-left: 50px;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 1200px;
+    height: 1000px;
     margin-bottom: 300px;
     
 }
 .stages-position {
-    display:inline-block;
     text-align: center;
+	float: center;
+	display: inline-block;
 }
+
+
+
 footer { 
     width: 100%; 
     bottom: 0px; 
