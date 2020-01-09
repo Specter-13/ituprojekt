@@ -7,7 +7,7 @@
 		<!--<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"> -->
 		<meta name="description" content="WiFi lokátor FIT VUT">  
 		<meta name="keywords" lang="cs" content="wifi, locator, lokátor, pozice, obsazenost, fit, vut, vut fit, informatika"> <!-- co nejvice klicovych slov, podh se to pak lepe vyhledava -->  
-		<meta name="author" content="Kateřina Kunorzová, David Špávor"> 
+		<meta name="author" content="Kateřina Kunorzová, David Špavor"> 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <script src="/Sources/jquery-3.4.1.min.js"></script>
@@ -37,11 +37,6 @@
 <script>loadStudents();</script>
 <script>GetStatistics();</script>
 
-
-
-
-
- <!-- Header Section -->
 	
 <div id="hlavicka"> 
 	
@@ -83,15 +78,19 @@
 				<div id="login"> 
 					<form action="index.php" name="form_login" method="post" id="form_login">
 						<label for="login" class="popis_form" >Login</label>
-						<input class="login" name="login" value="xlogin00"><br>
+						<input class="login" name="login" value="xspavo00"><br>
 						<label for="password" id="popis_form" class="popis_form">Heslo</label>
 						<input type="password" class="heslo" name="heslo" value="heslo"><br>
+						<button id="buttonOut" class="logOut" type="button" onclick="logout()" id="buttonLog2">Odhlásit</button>
 						<button type="button" onclick="check(this.log)" id="buttonLog">Přihlásit se</button>
+						
+						
 						<div id = "succ">
             				<h2> </h2>
         				</div> 
 					</form>	
 				</div>
+				
 			</div>
 
 					
@@ -119,6 +118,9 @@
 			<div class="menu-stats"> 
 				<div class="row"><div class="col-md-6"><p>Online: </p></div><div class="col-md-6"><p id="online"></p></div></div>
 				<div class="row"><div class="col-md-6"><p>D105:</p></div><div class="col-md-6"> <p id="d105"></p></div> </div>
+				<div class="row"><div class="col-md-6"><p>E112:</p></div><div class="col-md-6"> <p id="e112"></p></div> </div>
+				<div class="row"><div class="col-md-6"><p>Menza:</p></div><div class="col-md-6"> <p id="menza"></p></div> </div>
+				<div class="row"><div class="col-md-6"><p>Knihovna:</p></div><div class="col-md-6"> <p id="knihovna"></p></div> </div>
 			</div> 
 		</div>
 	</div>
@@ -159,24 +161,30 @@
                 <img class="stages" id="image" src="/Images/1-podlazi"></img>
     </div>
 
-    <div class = "message-Box-container" id="messageBox">
-        Napsat zprávu:<br>
-        <input class ="message-Box-text" type="text" value="Vaše zpráva">
-        <input class= "send-button" type="button" onclick="SendMessage()" value = "Odeslat">
-    </div>
+    
 
     <div class = "detail-view">
-		<h6>Lokalizovaný uživatel: </h6>
+		<h6>Lokalizovaný uživatel: </h6> <br><br>
         <div id = "Name">
             <h2></h2>
         </div> 
         <div id = "Room">
             <h2></h2>
-        </div>
+		</div>
+		<div class = "message-Box-container" id="messageBox">
+		Napsat zprávu:
+		<button class="exit" style="background-color: Transparent; border:none; " onclick="CloseMessageBox()"> 
+		<i class="fa fa-times-circle fa-lg" style="color:white;" ></i></button>'
+		<br>
+        <input class ="message-Box-text" type="text" placeholder="Vaše zpráva">
+        <input class= "send-button" type="button" onclick="SendMessage()" value = "Odeslat">
     </div>
+		
+	</div>
+	
 
     <!-- Footer Section -->
-    <footer>Copyright © 2020 Kateřina Kunorzová, David Špávor</footer>
+    <footer>Copyright © 2020 Kateřina Kunorzová, David Špavor</footer>
 
 
 

@@ -2,7 +2,46 @@
 function loadStudents() {
 
 
+  
+
 $(document).ready(function() {
+  
+  $('#table_id').DataTable({
+    "scrollY":  "1050px",
+    "scrollCollapse": true,
+    "processing" : false,
+    "paging" : false,
+    "info" : false,
+    "ordering" : false,
+
+    "language": {
+      search: '<i class="fa fa-filter" aria-hidden="true"></i>',
+      searchPlaceholder: 'Filter'
+    },
+    "ajax" : {
+      "url" : "/Model/students.json",
+      dataSrc : ''
+    },
+
+
+    "columns" : [ {
+    "width" : "5px",
+    "defaultContent": '<i class="fas fa-circle fa-xs" style="color:green" ></i>' 
+    },{
+      "width" : "100px",
+      "data" : "name"
+    },{
+      
+      "defaultContent": '<button class="Locate">Lokalizovat</button>'
+  
+    },{
+      
+      "defaultContent": '<button class="Message" style="background-color: Transparent; border:none; "> <i class="fa fa-comment-dots fa-lg" style="color:gray;" ></i></button>'
+    
+  }
+
+  ]
+  });
   
 
   $('#table_id').on( 'click', 'button.Message', function () {

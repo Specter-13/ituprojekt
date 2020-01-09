@@ -6,11 +6,17 @@
       var jsonObj = JSON.parse(this.responseText);
 
       var online = jsonObj.length;
-      var number = getCountOfPeopleInRoom(jsonObj,"D105");
-      console.log(number);
-      console.log(online);
+      var countd105 = getCountOfPeopleInRoom(jsonObj,"D105");
+      var countde112 = getCountOfPeopleInRoom(jsonObj,"E112");
+      var countmenza = getCountOfPeopleInRoom(jsonObj,"menza");
+      var countd105 = getCountOfPeopleInRoom(jsonObj,"D105");
+      var countknihovna = getCountOfPeopleInRoom(jsonObj,"knihovna");
+      
       document.getElementById("online").innerHTML = online;
-      document.getElementById("d105").innerHTML = number;
+      document.getElementById("d105").innerHTML = countd105;
+      document.getElementById("e112").innerHTML = countde112;
+      document.getElementById("menza").innerHTML = countmenza;
+      document.getElementById("knihovna").innerHTML = countknihovna;
     }
   };
   xhttp.open("GET", "Model/students.json", true);

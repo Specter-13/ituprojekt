@@ -1,53 +1,31 @@
- function check(log){
+function check(log){
 	
 var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState === 4 && xhttp.status === 200) {
-      var people = JSON.parse(this.responseText);
+	  var loginFlag = false;
 	  var login = document.form_login.login.value;
 	  var heslo = document.form_login.heslo.value;
-	
+
+	  var people = JSON.parse(this.responseText)
+		console.log(people);
 
 	  for (var i=0; i<people.length; i++){
 		  if((login === people[i].login) && (heslo === people[i].heslo)) {
-			  document.getElementById("succ").innerHTML = "Přihlášený uživatel: " + people[i].name;
-			  document.getElementById("succ").style.color = "white";
-			  document.getElementById("buttonLog").innerHTML = "Odhlásit se";
-			  
-			  
-			  $('#table_id').DataTable({
-				  "processing" : false,
-				  "paging" : false,
-				  "info" : false,
-				  "ordering" : false,
-				  "ajax" : {
-					  "url" : "/Model/students.json",
-					  dataSrc : ''
-				  },
-				  "columns" : [ {
-					"width" : "5px",
-					"defaultContent": '<i class="fas fa-circle fa-xs" style="color:green" ></i>' 
-				  },{
-
-					  "data" : "name"
-				  },{
-					"width" : "5px",
-					"defaultContent": '<button class="Message" style="background-color: Transparent; border:none; "> <i class="fa fa-comment-dots" style="color:gray;" ></i></button>'
-				  },{
-					"defaultContent": '<button class="Locate">Lokalizovat</button>'
-				}
-
-				]
-			  });
-			  
-			  
-			  
-			  break;
+			  //document.getElementById("succ").innerHTML = "Přihlášený uživatel: " + people[i].name;
+			  //document.getElementById("succ").style.color = "white";
+			  document.getElementById("buttonLog").style.visibility = "hidden";
+			  document.getElementById("buttonOut").style.visibility = "visible";
+			  document.getElementById("Content").style.visibility = "visible";
+			  loginFlag=true;
+			  break; 
 		  }
-		  else{
-			  document.getElementById("succ").innerHTML = "Špatné přihlašovací údaje!";
-			  document.getElementById("succ").style.color = "red";
-		  }
+	  }
+
+	  if(loginFlag == false)
+	  {
+		document.getElementById("succ").innerHTML = "Špatné přihlašovací údaje!";
+		document.getElementById("succ").style.color = "red";
 	  }
 	
     }
@@ -59,3 +37,9 @@ var xhttp = new XMLHttpRequest();
 		
 }
 
+function logout(){
+	document.getElementById("buttonLog").style.visibility = "visible";
+	document.getElementById("buttonOut").style.visibility = "hidden";
+	document.getElementById("Content").style.visibility = "hidden";
+	document.getElementById("succ").innerHTML = "";
+}

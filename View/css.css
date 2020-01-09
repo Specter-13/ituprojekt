@@ -238,5 +238,10 @@ footer{
 	color: white;
 }
 
+table{
+	
+	table-layout: fixed; 
+	word-wrap:break-word; 
+  }
 
 
