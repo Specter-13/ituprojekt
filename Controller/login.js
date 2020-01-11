@@ -7,7 +7,7 @@ var xhttp = new XMLHttpRequest();
 	  var login = document.form_login.login.value;
 	  var heslo = document.form_login.heslo.value;
 
-	  var people = JSON.parse(this.responseText)
+	  var people = JSON.parse(this.responseText);
 		console.log(people);
 
 	  for (var i=0; i<people.length; i++){
@@ -22,7 +22,7 @@ var xhttp = new XMLHttpRequest();
 		  }
 	  }
 
-	  if(loginFlag == false)
+	  if(loginFlag === false)
 	  {
 		document.getElementById("succ").innerHTML = "Špatné přihlašovací údaje!";
 		document.getElementById("succ").style.color = "red";

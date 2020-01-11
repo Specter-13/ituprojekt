@@ -16,7 +16,7 @@ $(document).ready(function() {
 
     "language": {
       search: '<i class="fa fa-filter" aria-hidden="true"></i>',
-      searchPlaceholder: 'Filter'
+      searchPlaceholder: 'Vyhledat'
     },
     "ajax" : {
       "url" : "/Model/students.json",
@@ -25,17 +25,15 @@ $(document).ready(function() {
 
 
     "columns" : [ {
-    "width" : "5px",
+    "width" : "10px",
     "defaultContent": '<i class="fas fa-circle fa-xs" style="color:green" ></i>' 
     },{
-      "width" : "100px",
+      "width" : "80px",
       "data" : "name"
     },{
-      
       "defaultContent": '<button class="Locate">Lokalizovat</button>'
   
     },{
-      
       "defaultContent": '<button class="Message" style="background-color: Transparent; border:none; "> <i class="fa fa-comment-dots fa-lg" style="color:gray;" ></i></button>'
     
   }
@@ -75,7 +73,7 @@ $('#table_id').on( 'click', 'button.Locate', function () {
     switch(floor)
     {
       case "0":
-        if(personLocation == "D0207" || personLocation == "D0206")
+        if(personLocation === "D0207" || personLocation === "D0206")
         {
           document.getElementById("image").src = "/Images/-2-podlazi.png";
         }

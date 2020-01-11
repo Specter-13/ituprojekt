@@ -66,13 +66,13 @@ body {
     padding-left: 20px;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 1100px;
+    height: 900px;
     margin-bottom: 50px;
     
 }
 .stages-position {
     display:inline-block;
-    text-align: center;
+    text-align: left;
 }
 footer { 
     width: 100%; 
@@ -103,8 +103,6 @@ div.dataTables_wrapper  div.dataTables_filter {
 .table_id{
     position: absolute;
     display:inline-block;
-
-    
 }
 .detail-view{
     position: absolute;
