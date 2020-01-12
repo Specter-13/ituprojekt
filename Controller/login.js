@@ -17,6 +17,7 @@ var xhttp = new XMLHttpRequest();
 			  document.getElementById("buttonLog").style.visibility = "hidden";
 			  document.getElementById("buttonOut").style.visibility = "visible";
 			  document.getElementById("Content").style.visibility = "visible";
+			  document.getElementById("succ").innerHTML = " ";
 			  loginFlag=true;
 			  break; 
 		  }
@@ -41,5 +42,10 @@ function logout(){
 	document.getElementById("buttonLog").style.visibility = "visible";
 	document.getElementById("buttonOut").style.visibility = "hidden";
 	document.getElementById("Content").style.visibility = "hidden";
-	document.getElementById("succ").innerHTML = "";
+	document.getElementById("succ").innerHTML = " ";
+	document.getElementById("Name").innerHTML = " ";
+	document.getElementById("Room").innerHTML = " ";
+	var x = document.getElementById("messageBox");
+   
+    x.style.display = "none";
 }

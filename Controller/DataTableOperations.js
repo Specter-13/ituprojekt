@@ -44,11 +44,10 @@ $(document).ready(function() {
 
   $('#table_id').on( 'click', 'button.Message', function () {
     var x = document.getElementById("messageBox");
-    if (x.style.display === "none") {
+   
       x.style.display = "inline";
-    } else {
-      x.style.display = "none";
-    }
+  
+   
 } );
 
 //funtion on click to locate person

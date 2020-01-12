@@ -155,7 +155,7 @@
 
 		</div>
 		
-		<div class="col-md-7" align="right"> 
+		<div class="col-md-7" align="left"> 
 			<div class = "stages-position">
 				<img class="stages" id="image" src="/Images/1-podlazi"></img>
 			</div>
@@ -167,10 +167,10 @@
 				
 				<div class = "message-Box-container" id="messageBox">
 					Napsat zprávu:    
-					<button class="exit" style="background-color: Transparent; border:none; text-align: right; " onclick="CloseMessageBox()"> 
-					<i class="fa fa-times-circle fa-lg" style="color:white;" ></i></button>
+					<button  class="exit" style="background-color: Transparent; border:none;  " onclick="CloseMessageBox()"> 
+					<i  class="fa fa-times-circle fa-lg" style="color:white;padding-left:38px" ></i></button>
 					<br>
-					<input class ="message-Box-text" type="text" placeholder="Vaše zpráva">
+					<textarea id="message-box" class ="message-Box-text" placeholder="Vaše zpráva"  cols="40" rows="5"  style="text-align:left"></textarea>
 					<input class= "send-button" type="button" onclick="SendMessage()" value = "Odeslat">
 				</div>
 				
