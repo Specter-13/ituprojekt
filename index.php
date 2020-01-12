@@ -13,7 +13,7 @@
     <script src="/Sources/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="/Controller/Statistics.js"></script>
     <script type="text/javascript" src="/Controller/DataTableOperations.js?v=3"></script>
-    <script type="text/javascript" src="/Controller/LoadStages.js"></script>
+    <script type="text/javascript" src="/Controller/LoadStages.js?v=3"></script>
     <script type="text/javascript" src="/Controller/SendMessage.js"></script>
 	<script type="text/javascript" src="/Controller/login.js?v=2"></script>
 	<script type="text/javascript" src="/Controller/dark-mode.js?v=2"></script>
@@ -48,17 +48,11 @@
 	<div class="row"> 
 		
 		<!-- dark mode -->
-		<div class="col-lg-11" align="right">
+		<div class="col-lg-12" align="right">
 			<label class="switch">
 				<input type="checkbox" onclick="dark()">
 				<span class="slider round"></span>
 			</label>
-		</div>
-		
-		<!-- jazyk -->
-		<div class="col-lg-1" align="right">
-			<a href="###">CZ</a>	
-			<a href="###" style="margin-left: 10px;">EN</a>
 		</div>
 		
 	</div>
@@ -79,7 +73,7 @@
 				<div id="login"> 
 					<form action="index.php" name="form_login" method="post" id="form_login">
 						<label for="login" class="popis_form" >Login</label>
-						<input class="login" name="login" value="xspavo00"><br>
+						<input class="login" name="login" value="xlogin00"><br>
 						<label for="password" id="popis_form" class="popis_form">Heslo</label>
 						<input type="password" class="heslo" name="heslo" value="heslo"><br>
 						<button id="buttonOut" class="logOut" type="button" onclick="logout()" id="buttonLog2">Odhlásit</button>
@@ -157,7 +151,7 @@
 		
 		<div class="col-md-7" align="left"> 
 			<div class = "stages-position">
-				<img class="stages" id="image" src="/Images/1-podlazi"></img>
+				<img class="stages" id="image" src="/Images/podlazi-1.png"></img>
 			</div>
 		</div>
 
