@@ -74,22 +74,22 @@ $('#table_id').on( 'click', 'button.Locate', function () {
       case "0":
         if(personLocation === "D0207" || personLocation === "D0206")
         {
-          document.getElementById("image").src = "/Images/-2-podlazi.png";
+          document.getElementById("image").src = "/Images/podlazi-2-.png";
         }
         else
         {
-          document.getElementById("image").src = "/Images/-1-podlazi.png";
+          document.getElementById("image").src = "/Images/podlazi-1-.png";
         }
         break;
       case "1":
-        document.getElementById("image").src = "/Images/1-podlazi.png";
+        document.getElementById("image").src = "/Images/podlazi-1.png";
         break;
       case "e":
       case "2":
-        document.getElementById("image").src = "/Images/2-podlazi.png";
+        document.getElementById("image").src = "/Images/podlazi-2.png";
         break;
       case "3":
-        document.getElementById("image").src = "/Images/3-podlazi.png";
+        document.getElementById("image").src = "/Images/podlazi-3.png";
         break;
       default:
 
